@@ -1,0 +1,1556 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{69639F1A-05C5-4B22-91F0-EAD5BF9B9328}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PGP.My.MyApplication</StartupObject>
+    <RootNamespace>PGP</RootNamespace>
+    <AssemblyName>P G P</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>PRUEBA 5.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>Z:\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\brm_nas\PGP\Pgp_Cierre\</InstallUrl>
+    <MinimumRequiredVersion>1.0.0.1</MinimumRequiredVersion>
+    <ApplicationRevision>12</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>P G P.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>P G P.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C15AE9D32E9B2F286F34AEB7062E342007503701</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>P G P_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Pgp_Cierre.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <HintPath>bin\Debug\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="SkinSoft.OSSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=669afa176ca71378" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adherencia.Designer.vb">
+      <DependentUpon>Adherencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Adherencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agendamiento.Designer.vb">
+      <DependentUpon>Agendamiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agendamiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agendamiento_Ingreso.Designer.vb">
+      <DependentUpon>Agendamiento_Ingreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agendamiento_Ingreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aprobacion_Novedades.Designer.vb">
+      <DependentUpon>Aprobacion_Novedades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Aprobacion_Novedades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cambio_De_Clave.Designer.vb">
+      <DependentUpon>Cambio_De_Clave.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cambio_De_Clave.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Congelaciones.Designer.vb">
+      <DependentUpon>Congelaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Congelaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Congelaciones_Ingreso.Designer.vb">
+      <DependentUpon>Congelaciones_Ingreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Congelaciones_Ingreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consolidado.Designer.vb">
+      <DependentUpon>Consolidado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consolidado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consolidado_Por_Fechas.Designer.vb">
+      <DependentUpon>Consolidado_Por_Fechas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consolidado_Por_Fechas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consolidado_Por_Gestiones.Designer.vb">
+      <DependentUpon>Consolidado_Por_Gestiones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consolidado_Por_Gestiones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulta_Escalamientos.Designer.vb">
+      <DependentUpon>Consulta_Escalamientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta_Escalamientos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulta_Hallazgos.Designer.vb">
+      <DependentUpon>Consulta_Hallazgos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta_Hallazgos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulta_Individual_Gestion.Designer.vb">
+      <DependentUpon>Consulta_Individual_Gestion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta_Individual_Gestion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulta_Individual_Productividad.Designer.vb">
+      <DependentUpon>Consulta_Individual_Productividad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta_Individual_Productividad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Correccion-Productividad.Designer.vb">
+      <DependentUpon>Correccion-Productividad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Correccion-Productividad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Creador_Notas.Designer.vb">
+      <DependentUpon>Creador_Notas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Creador_Notas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuentas_Desconectadas.Designer.vb">
+      <DependentUpon>Cuentas_Desconectadas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuentas_Desconectadas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Desconexiones.Designer.vb">
+      <DependentUpon>Desconexiones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Desconexiones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Desconexiones_Ingreso.Designer.vb">
+      <DependentUpon>Desconexiones_Ingreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Desconexiones_Ingreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deslogueo.Designer.vb">
+      <DependentUpon>Deslogueo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Deslogueo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Detalle_Logueo.Designer.vb">
+      <DependentUpon>Detalle_Logueo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Detalle_Logueo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dimencionamiento_Tiempos.Designer.vb">
+      <DependentUpon>Dimencionamiento_Tiempos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dimencionamiento_Tiempos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Escalamientos_anterior.Designer.vb">
+      <DependentUpon>Escalamientos_anterior.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Escalamientos_anterior.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Escalamientos_Consultar.Designer.vb">
+      <DependentUpon>Escalamientos_Consultar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Escalamientos_Consultar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estado_Agendamiento.Designer.vb">
+      <DependentUpon>Estado_Agendamiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estado_Agendamiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estado_Asignacion_TRE.Designer.vb">
+      <DependentUpon>Estado_Asignacion_TRE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estado_Asignacion_TRE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estado_Asig_Agendamiento.Designer.vb">
+      <DependentUpon>Estado_Asig_Agendamiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estado_Asig_Agendamiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estado_Asig_Congelaciones.Designer.vb">
+      <DependentUpon>Estado_Asig_Congelaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estado_Asig_Congelaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estado_Asig_Desconexiones.Designer.vb">
+      <DependentUpon>Estado_Asig_Desconexiones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estado_Asig_Desconexiones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estado_asig_movimiento.Designer.vb">
+      <DependentUpon>Estado_asig_movimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estado_asig_movimiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estado_Asig_Posventas.Designer.vb">
+      <DependentUpon>Estado_Asig_Posventas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estado_Asig_Posventas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estado_Asig_Tickets.Designer.vb">
+      <DependentUpon>Estado_Asig_Tickets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estado_Asig_Tickets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estado_Asig_Traslados.Designer.vb">
+      <DependentUpon>Estado_Asig_Traslados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estado_Asig_Traslados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estado_Asig_Casos_Vencidos.Designer.vb">
+      <DependentUpon>Estado_Asig_Casos_Vencidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estado_Asig_Casos_Vencidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estado_Congelaciones.Designer.vb">
+      <DependentUpon>Estado_Congelaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estado_Congelaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estado_Depuracion.Designer.vb">
+      <DependentUpon>Estado_Depuracion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estado_Depuracion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estado_Desconexiones.Designer.vb">
+      <DependentUpon>Estado_Desconexiones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estado_Desconexiones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estado_Liberaciones.Designer.vb">
+      <DependentUpon>Estado_Liberaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estado_Liberaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estado_Movimiento.Designer.vb">
+      <DependentUpon>Estado_Movimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estado_Movimiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estado_Tarifa_TRE.Designer.vb">
+      <DependentUpon>Estado_Tarifa_TRE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estado_Tarifa_TRE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estado_Tickets.Designer.vb">
+      <DependentUpon>Estado_Tickets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estado_Tickets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estado_Casos_Vencidos.Designer.vb">
+      <DependentUpon>Estado_Casos_Vencidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estado_Casos_Vencidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Generador_Datos_Moviletter.Designer.vb">
+      <DependentUpon>Generador_Datos_Moviletter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Generador_Datos_Moviletter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestiones_Asignadas.Designer.vb">
+      <DependentUpon>Gestiones_Asignadas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestiones_Asignadas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion_Correos.Designer.vb">
+      <DependentUpon>Gestion_Correos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Correos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion_Desconexiones.Designer.vb">
+      <DependentUpon>Gestion_Desconexiones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Desconexiones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion_Vencidos.Designer.vb">
+      <DependentUpon>Gestion_Vencidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Vencidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ges_Desconexiones_Ingreso.Designer.vb">
+      <DependentUpon>Ges_Desconexiones_Ingreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ges_Desconexiones_Ingreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hallazgos.Designer.vb">
+      <DependentUpon>Hallazgos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Hallazgos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informativo.Designer.vb">
+      <DependentUpon>Informativo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Informativo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Liberaciones.Designer.vb">
+      <DependentUpon>Liberaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Liberaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm1.Designer.vb">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logueo.Designer.vb">
+      <DependentUpon>Logueo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Logueo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent1.Designer.vb">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParent1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Notas.Designer.vb">
+      <DependentUpon>Notas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Notas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Novedades_Conexion.Designer.vb">
+      <DependentUpon>Novedades_Conexion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Novedades_Conexion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Posventas.Designer.vb">
+      <DependentUpon>Posventas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Posventas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Posventas_Ingreso.Designer.vb">
+      <DependentUpon>Posventas_Ingreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Posventas_Ingreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro_Novedades.Designer.vb">
+      <DependentUpon>Registro_Novedades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registro_Novedades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportar_Productividad.Designer.vb">
+      <DependentUpon>Reportar_Productividad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportar_Productividad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte de Traslados.Designer.vb">
+      <DependentUpon>Reporte de Traslados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte de Traslados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_Casos_Vencidos.Designer.vb">
+      <DependentUpon>Reporte_Casos_Vencidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_Casos_Vencidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_Escalamientos.Designer.vb">
+      <DependentUpon>Reporte_Escalamientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_Escalamientos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_Hallazgos.Designer.vb">
+      <DependentUpon>Reporte_Hallazgos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_Hallazgos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_Posventas.Designer.vb">
+      <DependentUpon>Reporte_Posventas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_Posventas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_Productividad.Designer.vb">
+      <DependentUpon>Reporte_Productividad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_Productividad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios_Desconectados.Designer.vb">
+      <DependentUpon>Servicios_Desconectados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios_Desconectados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios_Pendientes_Dx.Designer.vb">
+      <DependentUpon>Servicios_Pendientes_Dx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios_Pendientes_Dx.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tarifa_TRE.Designer.vb">
+      <DependentUpon>Tarifa_TRE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tarifa_TRE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tarifa_TRE_Ingreso.Designer.vb">
+      <DependentUpon>Tarifa_TRE_Ingreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tarifa_TRE_Ingreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tickets.Designer.vb">
+      <DependentUpon>Tickets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tickets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tickets_Depuracion.Designer.vb">
+      <DependentUpon>Tickets_Depuracion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tickets_Depuracion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tickets_DX.Designer.vb">
+      <DependentUpon>Tickets_DX.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tickets_DX.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tickets_Ingreso.Designer.vb">
+      <DependentUpon>Tickets_Ingreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tickets_Ingreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Traslados.Designer.vb">
+      <DependentUpon>Traslados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Traslados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Traslados_Ingreso.Designer.vb">
+      <DependentUpon>Traslados_Ingreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Traslados_Ingreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tre_Gestion_Nueva.Designer.vb">
+      <DependentUpon>Tre_Gestion_Nueva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tre_Gestion_Nueva.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tre_Nueva_Ingreso.Designer.vb">
+      <DependentUpon>Tre_Nueva_Ingreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tre_Nueva_Ingreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios.Designer.vb">
+      <DependentUpon>Usuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios_Control.Designer.vb">
+      <DependentUpon>Usuarios_Control.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios_Control.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Validación_Hallazgos.Designer.vb">
+      <DependentUpon>Validación_Hallazgos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Validación_Hallazgos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Adherencia.resx">
+      <DependentUpon>Adherencia.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agendamiento.resx">
+      <DependentUpon>Agendamiento.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agendamiento_Ingreso.resx">
+      <DependentUpon>Agendamiento_Ingreso.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aprobacion_Novedades.resx">
+      <DependentUpon>Aprobacion_Novedades.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cambio_De_Clave.resx">
+      <DependentUpon>Cambio_De_Clave.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Congelaciones.resx">
+      <DependentUpon>Congelaciones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Congelaciones_Ingreso.resx">
+      <DependentUpon>Congelaciones_Ingreso.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consolidado.resx">
+      <DependentUpon>Consolidado.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consolidado_Por_Fechas.resx">
+      <DependentUpon>Consolidado_Por_Fechas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consolidado_Por_Gestiones.resx">
+      <DependentUpon>Consolidado_Por_Gestiones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consulta_Escalamientos.resx">
+      <DependentUpon>Consulta_Escalamientos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consulta_Hallazgos.resx">
+      <DependentUpon>Consulta_Hallazgos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consulta_Individual_Gestion.resx">
+      <DependentUpon>Consulta_Individual_Gestion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consulta_Individual_Productividad.resx">
+      <DependentUpon>Consulta_Individual_Productividad.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Correccion-Productividad.resx">
+      <DependentUpon>Correccion-Productividad.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Creador_Notas.resx">
+      <DependentUpon>Creador_Notas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuentas_Desconectadas.resx">
+      <DependentUpon>Cuentas_Desconectadas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desconexiones.resx">
+      <DependentUpon>Desconexiones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desconexiones_Ingreso.resx">
+      <DependentUpon>Desconexiones_Ingreso.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deslogueo.resx">
+      <DependentUpon>Deslogueo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Detalle_Logueo.resx">
+      <DependentUpon>Detalle_Logueo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dimencionamiento_Tiempos.resx">
+      <DependentUpon>Dimencionamiento_Tiempos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Escalamientos_anterior.resx">
+      <DependentUpon>Escalamientos_anterior.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Escalamientos_Consultar.resx">
+      <DependentUpon>Escalamientos_Consultar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estado_Agendamiento.resx">
+      <DependentUpon>Estado_Agendamiento.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estado_Asignacion_TRE.resx">
+      <DependentUpon>Estado_Asignacion_TRE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estado_Asig_Agendamiento.resx">
+      <DependentUpon>Estado_Asig_Agendamiento.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estado_Asig_Congelaciones.resx">
+      <DependentUpon>Estado_Asig_Congelaciones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estado_Asig_Desconexiones.resx">
+      <DependentUpon>Estado_Asig_Desconexiones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estado_asig_movimiento.resx">
+      <DependentUpon>Estado_asig_movimiento.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estado_Asig_Posventas.resx">
+      <DependentUpon>Estado_Asig_Posventas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estado_Asig_Tickets.resx">
+      <DependentUpon>Estado_Asig_Tickets.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estado_Asig_Traslados.resx">
+      <DependentUpon>Estado_Asig_Traslados.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estado_Asig_Casos_Vencidos.resx">
+      <DependentUpon>Estado_Asig_Casos_Vencidos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estado_Congelaciones.resx">
+      <DependentUpon>Estado_Congelaciones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estado_Depuracion.resx">
+      <DependentUpon>Estado_Depuracion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estado_Desconexiones.resx">
+      <DependentUpon>Estado_Desconexiones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estado_Liberaciones.resx">
+      <DependentUpon>Estado_Liberaciones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estado_Movimiento.resx">
+      <DependentUpon>Estado_Movimiento.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estado_Tarifa_TRE.resx">
+      <DependentUpon>Estado_Tarifa_TRE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estado_Tickets.resx">
+      <DependentUpon>Estado_Tickets.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estado_Casos_Vencidos.resx">
+      <DependentUpon>Estado_Casos_Vencidos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generador_Datos_Moviletter.resx">
+      <DependentUpon>Generador_Datos_Moviletter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestiones_Asignadas.resx">
+      <DependentUpon>Gestiones_Asignadas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion_Correos.resx">
+      <DependentUpon>Gestion_Correos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion_Desconexiones.resx">
+      <DependentUpon>Gestion_Desconexiones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion_Vencidos.resx">
+      <DependentUpon>Gestion_Vencidos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ges_Desconexiones_Ingreso.resx">
+      <DependentUpon>Ges_Desconexiones_Ingreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hallazgos.resx">
+      <DependentUpon>Hallazgos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informativo.resx">
+      <DependentUpon>Informativo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Liberaciones.resx">
+      <DependentUpon>Liberaciones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm1.resx">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logueo.resx">
+      <DependentUpon>Logueo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent1.resx">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notas.resx">
+      <DependentUpon>Notas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Novedades_Conexion.resx">
+      <DependentUpon>Novedades_Conexion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Posventas.resx">
+      <DependentUpon>Posventas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Posventas_Ingreso.resx">
+      <DependentUpon>Posventas_Ingreso.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro_Novedades.resx">
+      <DependentUpon>Registro_Novedades.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportar_Productividad.resx">
+      <DependentUpon>Reportar_Productividad.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte de Traslados.resx">
+      <DependentUpon>Reporte de Traslados.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_Casos_Vencidos.resx">
+      <DependentUpon>Reporte_Casos_Vencidos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_Escalamientos.resx">
+      <DependentUpon>Reporte_Escalamientos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_Hallazgos.resx">
+      <DependentUpon>Reporte_Hallazgos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_Posventas.resx">
+      <DependentUpon>Reporte_Posventas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_Productividad.resx">
+      <DependentUpon>Reporte_Productividad.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios_Desconectados.resx">
+      <DependentUpon>Servicios_Desconectados.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios_Pendientes_Dx.resx">
+      <DependentUpon>Servicios_Pendientes_Dx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tarifa_TRE.resx">
+      <DependentUpon>Tarifa_TRE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tarifa_TRE_Ingreso.resx">
+      <DependentUpon>Tarifa_TRE_Ingreso.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tickets.resx">
+      <DependentUpon>Tickets.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tickets_Depuracion.resx">
+      <DependentUpon>Tickets_Depuracion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tickets_DX.resx">
+      <DependentUpon>Tickets_DX.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tickets_Ingreso.resx">
+      <DependentUpon>Tickets_Ingreso.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Traslados.resx">
+      <DependentUpon>Traslados.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Traslados_Ingreso.resx">
+      <DependentUpon>Traslados_Ingreso.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tre_Gestion_Nueva.resx">
+      <DependentUpon>Tre_Gestion_Nueva.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tre_Nueva_Ingreso.resx">
+      <DependentUpon>Tre_Nueva_Ingreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios.resx">
+      <DependentUpon>Usuarios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios_Control.resx">
+      <DependentUpon>Usuarios_Control.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Validación_Hallazgos.resx">
+      <DependentUpon>Validación_Hallazgos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Clave.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="P G P_ClaveTemporal.pfx" />
+    <None Include="P G P_TemporaryKey.pfx" />
+    <None Include="Pgp_Cierre.pfx" />
+    <None Include="Resources\Logo.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_Claro_Transparente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\259.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2591.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono guardar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1211781923.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %285%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel-icon-150x150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Excel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email_send.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16580926-documento-icono-rojo-brillante-de-la-navidad-en-el-fondo-blanco1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\991040-documento-icono.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_buscar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\111479_28363_128_exit_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1211755824.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Generate-tables256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Right-align256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Note256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\License-manager256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICONO LISTA 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exportar_datos_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tutorial Apolo 4.0_html_m10daeb51.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\distributor_report_98371.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\task-report-regular.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Text-align-left256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel2013icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconexcel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14854870-salir-icono.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7524827-icono-de-puerta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash-can256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timthumb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save-as256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exportar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prueba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prueba1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prueba2}.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Increase256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\escalar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1211766843.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MSN2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\400_F_37323829_keWnsvdoiHh7M2XaGpZdjPAhVNe97jGh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2592.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\400_F_37350539_vamnXQHLvK1ECLHweLKd6bLiUlRlz10k.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EXCEL.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1301766.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17518649-accept-red-circle-web-icon-on-white-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rojo--verde-iconos-ok-ok-no_17-1106090017.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\18361835-icono-para-cerrar-sesion-web-brillante-rojo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin título.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin título1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\066.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\engranaje.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9 - 128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9 - 16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9 - 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1211807289.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12379717-el-trabajo-en-equipo-el-comercio-de-diseno-de-logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_invoices_91734.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\200x200.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1211793143.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\017.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Developer-Folder-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\412.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Books.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\384.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\engranaje1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\062.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1211809828.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1211811759.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B - 128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wall Clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5603052-reloj-negro-moderno-con-reflejo-de-la-luz-y-la-plata-de-bisel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reloj-de-pared-versa-cuadrado-rojo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1211755830.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moleskine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11134423-supervisor-de-3d-blue-man-celebracion-de-un-portapapeles-y-preparado-para-gestionar-los-demas-trabaj.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\theme-editor-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12118072891.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1211729213.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11134423-supervisor-de-3d-blue-man-celebracion-de-un-portapapeles-y-preparado-para-gestionar-los-demas-trabaj1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trabajar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nueva trabajo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ingresar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Consultar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12117292131.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Escalamientos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reportar Casos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1211771360.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gestiones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ajustes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono Reparacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Configurar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Configuracion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Estilo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Estilo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sombra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\confi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\candado.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cambio de Clave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cambiar Clave.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cambiar Clave1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\note_accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Escalando.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adherencia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reloj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BitComet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\creditos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1211810823.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0171.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\167.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Credit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Monitoring64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gigantic_Thunderbird_logo_by_Rainbow_colors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_xisto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Application-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\514.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_0004_Globe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12117931431.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1211810814.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\web.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\applications-internet.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapa2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapa3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\com-android-settings-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuarios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empresas_form.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trabajo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reportes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconobuscador.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reportar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ESTADISTICAS07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gestio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gestionando.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estadistica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estadistica2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Radar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seguimiento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Generartion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HRMS_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuariomejorar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Agregar_Usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar Usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aceptar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Deslogueo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logueo12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PRUEBA 5.ico" />
+    <None Include="Resources\system-restart-panel.png" />
+    <None Include="Resources\Creador_Notas_Nuevo.png" />
+    <None Include="Resources\Creador_Notas.png" />
+    <None Include="Resources\PRUEBA 5.bmp" />
+    <None Include="Resources\282.png" />
+    <None Include="app.config" />
+    <None Include="Resources\Generar.png" />
+    <None Include="Resources\Notepad2.png" />
+    <None Include="Resources\_0037_Notepad.png" />
+    <None Include="Resources\Theme128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Microsoft.Office.Interop.Excel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Vbe.Interop">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="mscomctl">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="SkinSoft.OSSkin">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
